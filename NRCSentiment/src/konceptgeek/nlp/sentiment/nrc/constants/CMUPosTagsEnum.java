@@ -45,7 +45,7 @@ public enum CMUPosTagsEnum {
 		return value;
 	}
 	
-	public CMUPosTagsEnum fromValue(String value) {
+	public static CMUPosTagsEnum fromValue(String value) {
 		if(value != null) {
 			for(CMUPosTagsEnum posTagsEnum : CMUPosTagsEnum.values()) {
 				if(posTagsEnum.value.equalsIgnoreCase(value)) {

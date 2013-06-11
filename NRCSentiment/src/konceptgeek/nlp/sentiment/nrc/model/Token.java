@@ -3,13 +3,15 @@
  */
 package konceptgeek.nlp.sentiment.nrc.model;
 
+import konceptgeek.nlp.sentiment.nrc.constants.CMUPosTagsEnum;
+
 /**
  * @author konceptgeek
  *
  */
 public class Token {
 	private String text;
-	private String pos;
+	private CMUPosTagsEnum pos;
 	
 	/**
 	 * @return the text
@@ -26,13 +28,23 @@ public class Token {
 	/**
 	 * @return the pos
 	 */
-	public String getPos() {
+	public CMUPosTagsEnum getPos() {
 		return pos;
 	}
+	
 	/**
 	 * @param pos the pos to set
 	 */
 	public void setPos(String pos) {
+		this.pos = CMUPosTagsEnum.fromValue(pos);
+	}
+	
+	/**
+	 * Sets the pos.
+	 *
+	 * @param pos the new pos
+	 */
+	public void setPos(CMUPosTagsEnum pos) {
 		this.pos = pos;
 	}
 	
