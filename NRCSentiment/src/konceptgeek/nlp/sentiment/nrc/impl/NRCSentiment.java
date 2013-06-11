@@ -31,6 +31,8 @@ public class NRCSentiment {
 	/** The feature extractor. */
 	private FeatureExtractor featureExtractor;
 	
+	private SVMClassifier svmClassifier;
+	
 	/**
 	 * Instantiates a new nRC sentiment.
 	 */
@@ -43,6 +45,7 @@ public class NRCSentiment {
 			e.printStackTrace();
 		}
 		featureExtractor = new FeatureExtractor();
+		svmClassifier = new SVMClassifier(INRCSentimentConstants.SVM_MODEL_PATH);
 		
 	}
 	

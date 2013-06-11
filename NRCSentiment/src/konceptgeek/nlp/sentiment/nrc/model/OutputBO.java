@@ -11,4 +11,5 @@ import konceptgeek.nlp.sentiment.nrc.inf.IOutputBO;
  */
 public class OutputBO implements IOutputBO {
 
+	
 }
